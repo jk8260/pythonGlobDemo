@@ -22,6 +22,7 @@ if (len(sys.argv) > 1):
 currentPath = os.getcwd()
 dataFolderFilter = "data"
 searchroot = f'{currentPath}/{dataFolderFilter}'
+
 fileFilter = "*"
 extFilter = "json"
 searchFilePatern = f'{fileFilter}.{extFilter}'
@@ -50,6 +51,7 @@ print(f'Searching for the word \'{search_word}\' in the above listed files')
 # #######################################
 finalFiles = []
 for file in glob.iglob(searchpath, recursive=True):
+    # look for the text in each file
     try:
         with open(file) as fp:
             # read the file as a string
