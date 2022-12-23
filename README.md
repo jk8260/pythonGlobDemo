@@ -8,7 +8,7 @@ Walk Through steps
 - clone this repo
 
   `git clone https://github.com/jk8260/pythonGlobDemo.git`
-- run findRegEx
+- run [findRegEx](https://github.com/jk8260/pythonGlobDemo/blob/master/findRegEx.py)
   
   `python3 findRegEx.py`
 
