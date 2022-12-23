@@ -15,8 +15,9 @@ Walk Through steps
   ![image](https://user-images.githubusercontent.com/10749423/209390544-fa9c1486-73cf-4c13-ad06-ac0800cd161f.png)
 
 - run [searchInsideJson](https://github.com/jk8260/pythonGlobDemo/blob/master/searchInsideJson.py)
+  takes 1 arg which is what to searchh in the files for
   
-  `python3 searchInsideJson.py`
+  `python3 searchInsideJson.py` 
   
   ![image](https://user-images.githubusercontent.com/10749423/209388291-32ed7c2f-b354-46f1-925d-650b359ca5f9.png)
 
