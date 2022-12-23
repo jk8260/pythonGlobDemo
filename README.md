@@ -15,14 +15,15 @@ Walk Through steps
 - run searchInsideJson
   
   `python3 searchInsideJson.py`
+  
   ![image](https://user-images.githubusercontent.com/10749423/209388291-32ed7c2f-b354-46f1-925d-650b359ca5f9.png)
 
   
   `python3 searchInsideJson.py [searchword]`
 
   `python3 searchInsideJson.py Lester`
-  ![image](https://user-images.githubusercontent.com/10749423/209390064-3691c162-8563-4be1-96a2-71c20cf0e637.png)
   
+  ![image](https://user-images.githubusercontent.com/10749423/209390064-3691c162-8563-4be1-96a2-71c20cf0e637.png)
 
 
 This example has two data sub folders, to test the recursive flag (recursive does not work yet to me)
