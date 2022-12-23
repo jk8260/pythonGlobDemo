@@ -16,7 +16,7 @@ Walk Through steps
 
 - run [searchInsideJson](https://github.com/jk8260/pythonGlobDemo/blob/master/searchInsideJson.py)
   
-  this takes 1 arg which is what to search for in the files, 
+  this takes 1 arg which is what to search for in the files,
   if nothing is passed I wired it to search for 'event' which is in all example files
   
   `python3 searchInsideJson.py` 
