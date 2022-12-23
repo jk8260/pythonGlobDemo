@@ -23,7 +23,9 @@ Walk Through steps
   `python3 searchInsideJson.py Two`
 
 
-This example has two data sub folders, to test the recursive flag (does not work yet to me)
+This example has two data sub folders, to test the recursive flag (recursive does not work yet to me)
+
+There are also .txt files to be sure they are excluded.
 
 ![image](https://user-images.githubusercontent.com/10749423/209388621-c275c4f6-c70b-4a9d-8311-a24f490367e3.png)
 
