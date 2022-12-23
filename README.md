@@ -12,6 +12,8 @@ Walk Through steps
   
   `python3 findRegEx.py`
 
+  ![image](https://user-images.githubusercontent.com/10749423/209390544-fa9c1486-73cf-4c13-ad06-ac0800cd161f.png)
+
 - run searchInsideJson
   
   `python3 searchInsideJson.py`
