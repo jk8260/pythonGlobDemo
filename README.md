@@ -3,6 +3,7 @@
 Python 3.9 and the glob module
 
 This is a repo of code vomit from looking at and using the python glob module. 
+
 This code was written to test module methods for POC and is not production code (yet).
 
 Based on reading this site
