@@ -2,11 +2,13 @@ import sys
 import os
 import glob
 
-# https://pynative.com/python-glob/
+# https://docs.python.org/3.9/library/glob.html#module-glob
 
 # see what if anything was passed in on the command line
 # #######################################
 # python3 readJson.py popcorn
+
+# this will show the command line args
 # print('Number of arguments:', len(sys.argv), 'arguments.')
 # print('Argument List:', str(sys.argv))
 
@@ -15,36 +17,47 @@ search_word = 'event'
 if (len(sys.argv) > 1):
     search_word = str(sys.argv[1])
 
-baseFolderFilter = "data"
-fileFilter = "*"
-extFilter = ".json"
+
+#searchroot = "../../.." 
 currentPath = os.getcwd()
-path = f'{currentPath}/{baseFolderFilter}/{fileFilter}{extFilter}'
+dataFolderFilter = "data"
+searchroot = f'{currentPath}/{dataFolderFilter}'
+fileFilter = "*"
+extFilter = "json"
+searchFilePatern = f'{fileFilter}.{extFilter}'
 
-print(f'search path (recursive) = {path}')
+#searchpath = f'{currentPath}/{baseFolderFilter}/{searchFilePatern}'
+searchpath = f'{searchroot}/{searchFilePatern}'
 
-# # using glob to match every pathname
+print(f'CurrentPath = {currentPath}')
+print(f'search path (relative to currentPath) = {searchpath}')
+
+# # using iglob to match every pathname
 # #######################################
-print(f'Files matching {fileFilter}{extFilter}')
-print(f'Inside {currentPath}/{baseFolderFilter}')
+print(f'Files matching {searchFilePatern}')
+print(f'Inside {searchpath}')
+
 # for an object to be used in a for loop the object must be a list (or iterable) 
-# glob.glob returns a list of files 
-for item in glob.iglob(path, recursive=True):
+# glob.glob Returns a list of files which can get huge
+# glob.iglob Returns an iterator which yields the same values as glob() 
+# without actually storing them all simultaneously
+
+for item in glob.iglob(searchpath, recursive=True):
     print('\t' + item)
 
-print(f'Searching for the word \'{search_word}\' in these files')
+print(f'Searching for the word \'{search_word}\' in the above listed files')
 # list to store files that contain matching word
 # #######################################
-final_files = []
-for file in glob.iglob(path, recursive=True):
+finalFiles = []
+for file in glob.iglob(searchpath, recursive=True):
     try:
         with open(file) as fp:
             # read the file as a string
             data = fp.read()
             if search_word in data:
-                final_files.append(file)
+                finalFiles.append(file)
                 print('\t' + file)
     except:
         print('Exception while reading file')
 
-print(f'{len(final_files)} file(s) found with search word => {search_word}')
+print(f'{len(finalFiles)} file(s) found with search word => {search_word}')
