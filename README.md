@@ -36,7 +36,7 @@ Walk Through steps
   ![image](https://user-images.githubusercontent.com/10749423/209390064-3691c162-8563-4be1-96a2-71c20cf0e637.png)
 
 
-This example has two data sub folders, to test the recursive flag (recursive does not seem to work yet for me) for some reason it will not list nor search the datasub folder
+This example has two data sub folders, to test the recursive flag (recursive does not seem to work yet for me or I do not understand what recursive means here) for some reason it will not list nor search the datasub folder
 
 There are also .txt files to be sure they are excluded.
 
